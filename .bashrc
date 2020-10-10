@@ -37,9 +37,16 @@ alias rmi='rm -i'
 alias cpi='cp -i'
 alias mvi='mv -i'
 
+# Python alias
+alias python="python3"
+alias pip="pip3"
+
+# ----------
+# PATH
+# ----------
 # PATH of JAVA_HOME
-# export JAVA_HOME=$(/usr/libexec/java_home)
-# export SBT_OPTS="-Xms2048m -Xmx2048m -Xss10M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=128m -XX:MaxMetaspaceSize=256m"
+export JAVA_HOME=$(/usr/libexec/java_home)
+export SBT_OPTS="-Xms2048m -Xmx2048m -Xss10M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=128m -XX:MaxMetaspaceSize=256m"
 
 # Node PATH
-# export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
