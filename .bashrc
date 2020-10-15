@@ -41,6 +41,9 @@ alias mvi='mv -i'
 alias python="python3"
 alias pip="pip3"
 
+# emacs No Window mode
+alias enw="emacs -nw"
+
 # ----------
 # PATH
 # ----------
@@ -50,3 +53,19 @@ export SBT_OPTS="-Xms2048m -Xmx2048m -Xss10M -XX:+UseConcMarkSweepGC -XX:+CMSCla
 
 # Node PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# goenv PATH and initialization
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+
+# HACK: Go PATH
+# export GOPATH="${HOME}/go"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+
+export GO111MODULE=on  # go Module を有効にする
+export GOENV_DISABLE_GOPATH=1  # go get した pkg などを $GOPATH/{version}/pkg ではなく $GOPATH/pkg に配置する
+
+# my scripts PATH
+export PATH=$HOME/mybin:$PATH
