@@ -1,4 +1,3 @@
-
 " ----------
 " vim configuration file
 " ----------
@@ -9,7 +8,6 @@
 syntax enable
 " colorscheme molokai
 " colorscheme shirotelin
-
 
 """"""""""""""
 " preference "
@@ -52,3 +50,4 @@ set incsearch
 " 検索結果をハイライト表示
 set hlsearch
 
+source ~/.vimrc.maps
