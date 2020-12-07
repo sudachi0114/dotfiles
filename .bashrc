@@ -39,6 +39,9 @@ alias rmi='rm -i'
 alias cpi='cp -i'
 alias mvi='mv -i'
 
+# alias git shortcut
+alias g="git"
+
 # Python alias
 alias python="python3"
 alias pip="pip3"
