@@ -33,7 +33,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(markdown-mode atom-one-dark-theme solarized-theme auto-complete package-utils go-mode nyan-mode monokai-theme init-loader hiwin)))
+   '(rust-mode markdown-mode atom-one-dark-theme solarized-theme auto-complete package-utils go-mode nyan-mode monokai-theme init-loader hiwin)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
