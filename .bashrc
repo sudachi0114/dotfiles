@@ -72,5 +72,9 @@ export PATH="$PATH:$GOPATH/bin"
 export GO111MODULE=on  # go Module を有効にする
 export GOENV_DISABLE_GOPATH=1  # go get した pkg などを $GOPATH/{version}/pkg ではなく $GOPATH/pkg に配置する
 
+# Rust ~/.cargo PATH
+source $HOME/.cargo/env
+
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
+source "$HOME/.cargo/env"
