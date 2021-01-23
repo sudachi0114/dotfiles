@@ -77,4 +77,3 @@ source $HOME/.cargo/env
 
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
-source "$HOME/.cargo/env"
