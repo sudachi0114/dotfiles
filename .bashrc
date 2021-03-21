@@ -66,10 +66,10 @@ export GOENV_DISABLE_GOPATH=1  # go get した pkg などを $GOPATH/{version}/p
 eval "$(goenv init -)"
 
 # HACK: Go PATH
-# export GOPATH="${HOME}/go"
-# export PATH="$GOROOT/bin:$PATH"
-# export PATH="$PATH:$GOPATH/bin"
-# export GO111MODULE=on  # go Module を有効にする
+export GOPATH="$HOME/go"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+export GO111MODULE=on  # go Module を有効にする
 
 # Rust ~/.cargo PATH
 source $HOME/.cargo/env
