@@ -74,5 +74,9 @@ export GO111MODULE=on  # go Module を有効にする
 # Rust ~/.cargo PATH
 source $HOME/.cargo/env
 
+# MySQL
+export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
