@@ -42,6 +42,9 @@ alias mvi='mv -i'
 # alias git shortcut
 alias g="git"
 
+# Linux like grep colorize
+export GREP_OPTIONS='--color=auto'
+
 # Python alias
 alias python="python3"
 alias pip="pip3"
