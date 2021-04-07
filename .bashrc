@@ -45,10 +45,6 @@ alias g="git"
 # Linux like grep colorize
 export GREP_OPTIONS='--color=auto'
 
-# Python alias
-alias python="python3"
-alias pip="pip3"
-
 # emacs No Window mode
 alias enw="emacs -nw"
 
@@ -80,6 +76,9 @@ source $HOME/.cargo/env
 # MySQL
 export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# python
+eval "$(pyenv init -)"
 
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
