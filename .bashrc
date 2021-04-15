@@ -41,6 +41,7 @@ alias mvi='mv -i'
 
 # alias git shortcut
 alias g="git"
+alias gs="git branch;git status"
 
 # Linux like grep colorize
 export GREP_OPTIONS='--color=auto'
