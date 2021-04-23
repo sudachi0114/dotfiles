@@ -15,5 +15,3 @@ ln -sf ~/projects/dotfiles/.tmux.conf ~/.tmux.conf
 
 # git config
 ln -sf ~/projects/dotfiles/.gitconfig ~/.gitconfig
-
-exec $SHELL -l
