@@ -2,7 +2,7 @@
 ln -sf ~/projects/dotfiles/.bashrc.ubuntu ~/.bashrc
 
 # emacs
-ln -sf ~/projects/dotfiles/inits ~/.emacs.d/inits
+ln -sf ~/projects/dotfiles/inits ~/.emacs.d/
 ln -sf ~/projects/dotfiles/init.el ~/.emacs.d/init.el
 
 # vim
