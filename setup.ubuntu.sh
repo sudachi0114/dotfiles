@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # bash configration file
 ln -sf ~/projects/dotfiles/.bashrc.ubuntu ~/.bashrc
 
