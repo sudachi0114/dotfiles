@@ -156,5 +156,10 @@ alias enw='emacs -nw'
 # PATH
 # ----------
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
