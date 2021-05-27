@@ -79,7 +79,7 @@ export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # python
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
