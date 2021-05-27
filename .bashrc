@@ -83,3 +83,7 @@ eval "$(pyenv init --path)"
 
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
+
+# direnv
+export EDITOR=emacs
+eval "$(direnv hook bash)"
