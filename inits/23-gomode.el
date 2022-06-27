@@ -1,3 +1,5 @@
+(use-package go-mode)
+
 ;; go get で入れたツールのパスを通す
 (add-to-list 'exec-path (expand-file-name "/Users/sudachi/go/bin/"))
 
