@@ -1,6 +1,5 @@
 (use-package lsp-mode)
 (use-package lsp-ui)
-(use-package company-lsp)
 
 ;; lsp-mode keybinds
 (defun lsp-mode-init ()
