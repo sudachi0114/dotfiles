@@ -60,6 +60,9 @@ alias enw="emacs -nw"
 # ----------
 # PATH
 # ----------
+# brew
+export PATH="$PATH:/opt/homebrew/bin/"
+
 # PATH of JAVA_HOME
 # export JAVA_HOME=$(/usr/libexec/java_home)
 
