@@ -1,3 +1,7 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/bashrc.pre.bash" ]] && builtin source "$HOME/.fig/shell/bashrc.pre.bash"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # ----------
 # prompt colorize & git-prompt setting
 # git-completion setting
@@ -110,3 +114,8 @@ export PATH=$HOME/mybin:$PATH
 
 # History
 export HISTSIZE=10000
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && builtin source "$HOME/.fig/shell/bashrc.post.bash"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+. "$HOME/.cargo/env"
