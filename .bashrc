@@ -104,3 +104,9 @@ eval "$(pyenv init --path)"
 
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# History
+export HISTSIZE=10000

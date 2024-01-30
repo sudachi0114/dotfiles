@@ -18,3 +18,6 @@ ln -sf ~/projects/dotfiles/.tmux.conf ~/.tmux.conf
 
 # git
 ln -sf ~/projects/dotfiles/.gitconfig ~/.gitconfig
+
+# fzf
+ln -sf ~/projects/dotfiles/.fzf.bash ~/.fzf.bash
