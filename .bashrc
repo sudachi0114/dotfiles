@@ -66,9 +66,6 @@ export PATH="$PATH:/opt/homebrew/bin/"
 # Node PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# Rust ~/.cargo PATH
-source $HOME/.cargo/env
-
 # MySQL
 export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
