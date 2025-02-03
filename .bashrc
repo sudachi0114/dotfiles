@@ -63,18 +63,6 @@ alias enw="emacs -nw"
 # brew
 export PATH="$PATH:/opt/homebrew/bin/"
 
-# PATH of JAVA_HOME
-# export JAVA_HOME=$(/usr/libexec/java_home)
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-export JAVA_HOME=$HOME/.sdkman/candidates/java/current
-export PATH=$JAVA_HOME/bin:$PATH
-
-export SBT_OPTS="-Xms2048m -Xmx2048m -Xss10M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=128m -XX:MaxMetaspaceSize=256m"
-
 # Node PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
