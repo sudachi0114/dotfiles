@@ -66,11 +66,6 @@ export PATH="$PATH:/opt/homebrew/bin/"
 # Node PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# python
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
 
