@@ -63,9 +63,6 @@ alias enw="emacs -nw"
 # brew
 export PATH="$PATH:/opt/homebrew/bin/"
 
-# Node PATH
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
 
