@@ -8,8 +8,12 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # git-completion
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-source /usr/local/etc/bash_completion.d/git-completion.bash
+#   https://gist.github.com/romansavrulin/41e55fba693b4025ed693559083bc3a0
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
+    # if not found in /usr/local/etc, try the brew --prefix location
+    [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ] && \
+        . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
+}
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # prompt
@@ -62,12 +66,13 @@ alias enw="emacs -nw"
 # ----------
 # brew
 export PATH="$PATH:/opt/homebrew/bin/"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # my scripts PATH
 export PATH=$HOME/mybin:$PATH
 
-# fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
 # History
 export HISTSIZE=10000
